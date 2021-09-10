@@ -8,7 +8,7 @@ This is an individual assessment. All work must be your own. Your challenge scor
 
 You are not allowed to collaborate during the Sprint Challenge. Your work reflects your proficiency in Responsive Design, and JavaScript Basics.
 
-
+arb edit for pushy
 ## Introduction
 
 In this challenge, you will use a data set of artists to build an "influential artists" webpage. This data comes from a set of "50 influential artists" on [Kaggle](https://www.kaggle.com/ikarus777/best-artworks-of-all-time). We have reduced the data to just 20 artists to make it slightly easier to work with.
