@@ -134,3 +134,23 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+@media screen and (max-width:500px) {
+.artists-container{
+    /* display:block; */
+ width:200%;
+ flex-direction:column;
+ margin-left:10%;
+ 
+}
+.title-container{
+    width:150%;
+    justify-content:stretch;
+}
+.title-container div{
+    
+    justify-content:center;
+    align-items:center;
+   
+}
+}
