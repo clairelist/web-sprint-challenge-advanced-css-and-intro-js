@@ -251,7 +251,8 @@ let splitArray=[];
 function get20s(array) {
   for (let i=0; i<array.length; i++){
   if  (array[i].years.includes("19") && !(array[i].years.includes("18"))){
-     splitArray=[array[i].name];
+     splitArray.push([array[i].name]);
+     
     
      
        console.log(splitArray);
