@@ -253,13 +253,16 @@ function get20s(array) {
   if  (array[i].years.includes("19") && !(array[i].years.includes("18"))){
      splitArray=[array[i].name];
     
-     console.log(splitArray);
+     
+       console.log(splitArray);
+     
   }
   //as it stands right now, we only return them in seperate arrayes
   
   }
- 
+  // return splitArray;
 }
+
 
 console.log(get20s(artists));
 
@@ -273,9 +276,11 @@ Use removeArtist to do the following:
 
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function removeArtist(array,number) {
+  array.splice(number,1);
+  return array.length;
 }
+console.log(removeArtist(artists,0));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -294,9 +299,21 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function addArtist(array) {
+  array.push([{ 
+    "id": 20,
+    "name": 'Claire List',
+    "years": '1994 - 2021',
+    "genre": 'Irrealism',
+    "nationality": 'German',
+    "bio": 'Claire List was born toward the end of the century and had an infamous, lifelong battle with mental illness which she expressed through her work.',
+    "paintings": 13,
+  }  ])
+  return array;
 }
+
+addArtist(artists);
+// console.log(artists);
 
 
 
@@ -307,11 +324,20 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/) {
-  /*Your Code Here*/
+let lotsArray=[];
+function lotsOfArt(array) {
+  for (let i=0; i<array.length; i++){
+    if (array[i].paintings>=100){
+      
+      lotsArray.push(array[i].name);
+
+      return lotsArray;
+    }
+
+  }
 }
 
-
+console.log(lotsOfArt(artists));
 /* ***** END OF TASKS ***** */
 
 
