@@ -251,21 +251,21 @@ let splitArray=[];
 function get20s(array) {
   for (let i=0; i<array.length; i++){
   if  (array[i].years.includes("19") && !(array[i].years.includes("18"))){
-     splitArray.push([array[i].name]);
+     splitArray.push(array[i].name);
      
     
      
-       console.log(splitArray);
+      
      
   }
   //as it stands right now, we only return them in seperate arrayes
   
   }
-  // return splitArray;
+  console.log(splitArray);
 }
 
 
-console.log(get20s(artists));
+  console.log(get20s(artists));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -332,13 +332,16 @@ function lotsOfArt(array) {
       
       lotsArray.push(array[i].name);
 
-      return lotsArray;
+     
     }
-
+    // 
   }
+  console.log(lotsArray);
 }
 
 console.log(lotsOfArt(artists));
+
+
 /* ***** END OF TASKS ***** */
 
 
