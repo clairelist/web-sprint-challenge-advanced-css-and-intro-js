@@ -252,16 +252,14 @@ function get20s(array) {
   for (let i=0; i<array.length; i++){
   if  (array[i].years.includes("19") && !(array[i].years.includes("18"))){
      splitArray.push(array[i].name);
-     
-    
-     
+
       
      
   }
-  //as it stands right now, we only return them in seperate arrayes
+  
   
   }
-  console.log(splitArray);
+  return splitArray;
 }
 
 
@@ -336,8 +334,10 @@ function lotsOfArt(array) {
     }
     // 
   }
-  console.log(lotsArray);
+  // console.log(lotsArray);
+return lotsArray;
 }
+
 
 console.log(lotsOfArt(artists));
 
