@@ -312,7 +312,7 @@ function addArtist(array) {
 }
 
 addArtist(artists);
-// console.log(artists);
+ console.log(artists);
 
 
 
